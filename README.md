@@ -80,7 +80,7 @@ end
 ```
 
 e.g:
-[]()
+[`mix.exs#L61`](https://github.com/dwyl/phoenix-content-negotiation-tutorial/blob/87de50be353e372007cff3b1c4e7d4e0927a61b4/mix.exs#L61)
 
 <br />
 
@@ -94,7 +94,7 @@ get "/ping", PingController, :ping
 ```
 
 e.g:
-[]()
+[`lib/app_web/router.ex#L21`](https://github.com/dwyl/phoenix-content-negotiation-tutorial/blob/909c80e4dd23d99589cd13c9ecb5fee1b9575c71/lib/app_web/router.ex#L21)
 
 <br />
 
@@ -112,7 +112,7 @@ end
 ```
 
 e.g:
-[]()
+[`lib/app_web/controllers/ping_controller.ex#L5-L7`](https://github.com/dwyl/phoenix-content-negotiation-tutorial/blob/909c80e4dd23d99589cd13c9ecb5fee1b9575c71/lib/app_web/controllers/ping_controller.ex#L5-L7)
 
 <br />
 
@@ -122,6 +122,25 @@ We've created a new controller for clarity/separation.
 
 
 ### 3.b Create the Corresponding Test (Optional+Recommended)
+
+Create the corresponding test file
+to keep your Test coverage complete:
+
+```elixir
+defmodule AppWeb.PingControllerTest do
+  use AppWeb.ConnCase
+
+  test "GET /ping (GIF) renders 1x1 pixel", %{conn: conn} do
+    conn = get(conn, Routes.ping_path(conn, :ping))
+    assert conn.status == 200
+    assert conn.state == :sent
+    assert conn.resp_body =~ <<71, 73, 70, 56, 57>>
+  end
+end
+```
+
+e.g:
+[`test/app_web/controllers/ping_controller_test.exs#L5-L10`](https://github.com/dwyl/phoenix-content-negotiation-tutorial/blob/909c80e4dd23d99589cd13c9ecb5fee1b9575c71/test/app_web/controllers/ping_controller_test.exs#L5-L10)
 
 
 ## 4. Add a `GIF` to the `README.md` of the Heroku App
@@ -133,8 +152,10 @@ to the `README.md` file:
 ![wake-sleeping-heroku-app](http://localhost:4000/ping)
 ```
 
-e.g:
-[]()
+e.g: [pull/5/files](https://github.com/dwyl/phoenix-content-negotiation-tutorial/pull/5/files)
+
+![ping-image-added-to-readme](https://user-images.githubusercontent.com/194400/83336993-aa65db80-a2af-11ea-9ade-bbaa05dba5da.png)
+
 
 
 > The GIF is a _transparent_ 1x1 pixel,
