@@ -117,9 +117,11 @@ e.g:
 <br />
 
 You can either create a brand new controller,
-or use an existing one if you prefer.
+or use an existing one if you prefer. <br />
 We've created a new controller for clarity/separation.
 
+
+### 3.b Create the Corresponding Test (Optional+Recommended)
 
 
 ## 4. Add a `GIF` to the `README.md` of the Heroku App
@@ -150,6 +152,6 @@ doesn't see an error in their console/browser.
 
 
 
-Documentation available at
+Docs available at
 [https://hexdocs.pm/ping](https://hexdocs.pm/ping).
 But there's really not much to it.
