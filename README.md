@@ -149,7 +149,7 @@ Add an image linking to the endpoint of the App
 to the `README.md` file:
 
 ```md
-![wake-sleeping-heroku-app](http://localhost:4000/ping)
+![wake-sleeping-heroku-app](http://phxtodo.herokuapp.com/ping)
 ```
 
 e.g: [pull/5/files](https://github.com/dwyl/phoenix-content-negotiation-tutorial/pull/5/files)
