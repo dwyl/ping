@@ -9,7 +9,7 @@ defmodule Ping.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
-      description: "Content Negotation lets you render HTML and JSON in the same route.",
+      description: "ping lets you ping your app to wake it",
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: [
         coveralls: :test,
