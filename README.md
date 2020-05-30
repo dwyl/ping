@@ -154,7 +154,7 @@ to the `README.md` file:
 
 e.g: [pull/5/files](https://github.com/dwyl/phoenix-content-negotiation-tutorial/pull/5/files)
 
-![ping-image-added-to-readme](https://user-images.githubusercontent.com/194400/83336993-aa65db80-a2af-11ea-9ade-bbaa05dba5da.png)
+![ping-image-added-to-readme](https://user-images.githubusercontent.com/194400/83339303-71843180-a2c4-11ea-8719-675c96121a8b.png)
 
 
 
