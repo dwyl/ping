@@ -4,7 +4,7 @@ defmodule Ping.MixProject do
   def project do
     [
       app: :ping,
-      version: "1.0.0",
+      version: "0.1.1",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
