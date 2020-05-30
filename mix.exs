@@ -4,7 +4,7 @@ defmodule Ping.MixProject do
   def project do
     [
       app: :ping,
-      version: "1.0.0",
+      version: "1.0.1",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -41,7 +41,7 @@ defmodule Ping.MixProject do
   defp deps do
     [
       # Plug helper functions: github.com/elixir-plug/plug
-      {:plug, "~> 1.10", only: [:dev, :test]},
+      {:plug, "~> 1.10.1"},
 
       # Testing Wildcard Route Handler in a Phoenix App:
       {:jason, "~> 1.2.0", only: [:dev, :test]},
