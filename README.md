@@ -1,6 +1,6 @@
 <div align="center">
 
-# `ping`
+# `ping` 🏓
 
 Easily ping (wake) an idle Heroku App from slumber.
 
@@ -11,17 +11,21 @@ Easily ping (wake) an idle Heroku App from slumber.
 
 </div>
 
+<br />
 
-## Why?
+## Why? 🤷
 
-We have _several_ demo/example/tutorial Apps deployed to Heroku.
-Apps on the "free" tier go to sleep after **30 minutes** of inactivity.
+We have _several_ demo/example/tutorial Apps deployed to Heroku. <br />
+Apps on the "free" tier
+go to sleep after **30 minutes** of inactivity. <br />
 see: https://devcenter.heroku.com/articles/free-dyno-hours
 
 In order to wake them,
 we wrote a few lines of code that can be added to any
 Elixir/Phoenix App and invoked as an image
 in the `README.md` of the project that links to the App.
+So the app is ready to go by the time the person
+_reading_ the `README.md` clicks on the link. 🔗
 
 We had implemented the "wake from sleep" endpoint
 several times in our Heroku Apps,
@@ -32,7 +36,9 @@ After copy-pasting the code a couple of times,
 we decided to make it a DRY reusable package
 that we can use in our _next_ app(s)!
 
-## What?
+<br />
+
+## What? 💡
 
 An easy way for us to wake our Heroku demo apps.
 
@@ -45,41 +51,100 @@ You can use a _free_ service such as: https://cron-job.org
 as described by [Mahdhi Rezvi](https://github.com/Mahdhir) in:
 https://medium.com/better-programming/keeping-my-heroku-app-alive-b19f3a8c3a82
 
+<br />
 
-## Who?
+## Who? 👤
 
 This package is for anyone building
 an Elixir/Phoenix app deployed to Heroku.
 
+<br />
 
-# How?
+# How? 💻
 
-## 1. Installation
+Add `ping` to your Phoenix App
+and use it to wake your Heroku App in 4 easy steps:
+
+<br />
+
+## 1. Installation 📝
 
 Install by adding `ping` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:ping, "~> 1.0.0"}
+    {:ping, "~> 1.0.0"},
   ]
 end
 ```
 
+e.g:
+[]()
+
+<br />
+
 ## 2. Create a `get /ping` Route in your `router.ex`
 
+Open the `router.ex` file of your Phoenix project
+and add the following route to your default pipeline:
 
+```elixir
+get "/ping", PingController, :ping
+```
 
+e.g:
+[]()
 
+<br />
 
-## 3. Create the `ping/2` Function in your Controller
+## 3. Create the `ping/2` Function in your Controller
+
+```elixir
+defmodule AppWeb.PingController do
+  use AppWeb, :controller
+
+  # see: github.com/dwyl/ping
+  def ping(conn, params) do
+    Ping.render_pixel(conn, params)
+  end
+end
+```
+
+e.g:
+[]()
+
+<br />
 
 You can either create a brand new controller,
-or use an existing one if you prefer.  
+or use an existing one if you prefer.
+We've created a new controller for clarity/separation.
 
 
 
-## 4. Add a GIF to the `README.md` of the Heroku App
+## 4. Add a `GIF` to the `README.md` of the Heroku App
+
+Add an image linking to the endpoint of the App
+to the `README.md` file:
+
+```md
+![wake-sleeping-heroku-app](http://localhost:4000/ping)
+```
+
+e.g:
+[]()
+
+
+> The GIF is a _transparent_ 1x1 pixel,
+so it's both minimal in size
+to minimise response time
+and _invisible_ to the person.
+The idea is just to make the most basic HTTP request
+to the Heroku app in order to wake it.
+We don't actually care what is returned.
+But we don't want it to `404`
+so the person reading the `README.md`
+doesn't see an error in their console/browser.
 
 
 
