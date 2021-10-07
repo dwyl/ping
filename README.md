@@ -74,7 +74,7 @@ Install by adding `ping` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:ping, "~> 1.0.1"},
+    {:ping, "~> 1.1.0"},
   ]
 end
 ```
