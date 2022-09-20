@@ -5,9 +5,9 @@
 Easily ping (wake) an idle Heroku App from slumber.
 
 [![Build Status](https://img.shields.io/travis/dwyl/ping/master.svg?style=flat-square)](https://travis-ci.org/dwyl/ping)
-[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/ping/master.svg?style=flat-square)](http://codecov.io/github/dwyl/ping?branch=master)
+[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/ping/master.svg?style=flat-square)](https://codecov.io/github/dwyl/ping?branch=master)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/ping/issues)
-[![HitCount](http://hits.dwyl.com/dwyl/ping.svg)](https://github.com/dwyl/ping)
+[![HitCount](https://hits.dwyl.com/dwyl/ping.svg)](https://github.com/dwyl/ping)
 
 </div>
 
@@ -149,7 +149,7 @@ Add an image linking to the endpoint of the App
 to the `README.md` file:
 
 ```md
-![wake-sleeping-heroku-app](http://phxtodo.herokuapp.com/ping)
+![wake-sleeping-heroku-app](https://phxtodo.herokuapp.com/ping)
 ```
 
 e.g: [pull/5/files](https://github.com/dwyl/phoenix-content-negotiation-tutorial/pull/5/files)
