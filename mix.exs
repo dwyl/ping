@@ -48,7 +48,7 @@ defmodule Ping.MixProject do
       {:phoenix, "~> 1.7.11", only: [:dev, :test]},
 
       # Track coverage: github.com/parroty/excoveralls
-      {:excoveralls, "~> 0.15.0", only: :test},
+      {:excoveralls, "~> 0.18.0", only: :test},
 
       # For publishing Hex.docs:
       {:ex_doc, "~> 0.25.3", only: :dev}
