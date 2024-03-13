@@ -4,8 +4,8 @@
 
 Easily ping (wake) an idle Heroku App from slumber.
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dwyl/ping/ci.yml?label=build&style=flat-square&branch=master)
-[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/ping/master.svg?style=flat-square)](https://codecov.io/github/dwyl/ping?branch=master)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dwyl/ping/ci.yml?label=build&style=flat-square&branch=main)
+[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/ping/main.svg?style=flat-square)](https://codecov.io/github/dwyl/ping?branch=main)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/ping/issues)
 [![HitCount](https://hits.dwyl.com/dwyl/ping.svg)](https://github.com/dwyl/ping)
 
