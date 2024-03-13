@@ -24,7 +24,7 @@ defmodule Ping.MixProject do
     [
       files: ~w(lib/ping.ex LICENSE mix.exs README.md),
       name: "ping",
-      licenses: ["GNU GPL v2.0"],
+      licenses: ["GPL-2.0-or-later"],
       maintainers: ["dwyl"],
       links: %{"GitHub" => "https://github.com/dwyl/ping"}
     ]
