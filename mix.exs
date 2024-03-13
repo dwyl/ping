@@ -4,7 +4,7 @@ defmodule Ping.MixProject do
   def project do
     [
       app: :ping,
-      version: "1.1.0",
+      version: "2.0.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -24,7 +24,7 @@ defmodule Ping.MixProject do
     [
       files: ~w(lib/ping.ex LICENSE mix.exs README.md),
       name: "ping",
-      licenses: ["GNU GPL v2.0"],
+      licenses: ["GPL-2.0-or-later"],
       maintainers: ["dwyl"],
       links: %{"GitHub" => "https://github.com/dwyl/ping"}
     ]
@@ -41,14 +41,14 @@ defmodule Ping.MixProject do
   defp deps do
     [
       # Plug helper functions: github.com/elixir-plug/plug
-      {:plug, "~> 1.12.1"},
+      {:plug, "~> 1.15.3"},
 
       # Testing Wildcard Route Handler in a Phoenix App:
-      {:jason, "~> 1.2.2", only: [:dev, :test]},
-      {:phoenix, "~> 1.6.0", only: [:dev, :test]},
+      {:jason, "~> 1.4.1", only: [:dev, :test]},
+      {:phoenix, "~> 1.7.11", only: [:dev, :test]},
 
       # Track coverage: github.com/parroty/excoveralls
-      {:excoveralls, "~> 0.14.3", only: :test},
+      {:excoveralls, "~> 0.15.0", only: :test},
 
       # For publishing Hex.docs:
       {:ex_doc, "~> 0.25.3", only: :dev}
