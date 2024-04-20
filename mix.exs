@@ -51,7 +51,7 @@ defmodule Ping.MixProject do
       {:excoveralls, "~> 0.18.0", only: :test},
 
       # For publishing Hex.docs:
-      {:ex_doc, "~> 0.31.2", only: :dev}
+      {:ex_doc, "~> 0.32.1", only: :dev}
     ]
   end
 end
