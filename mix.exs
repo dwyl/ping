@@ -45,7 +45,7 @@ defmodule Ping.MixProject do
 
       # Testing Wildcard Route Handler in a Phoenix App:
       {:jason, "~> 1.4.1", only: [:dev, :test]},
-      {:phoenix, "~> 1.7.11", only: [:dev, :test]},
+      {:phoenix, "~> 1.8.1", only: [:dev, :test]},
 
       # Track coverage: github.com/parroty/excoveralls
       {:excoveralls, "~> 0.18.0", only: :test},
